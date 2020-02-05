@@ -12,6 +12,8 @@ export const Post = props => {
   
   const [likes, setLikes] = useState(props.post.likes);
 
+
+
   return (
     <div className="post-border">
       <PostHeader
@@ -28,7 +30,7 @@ export const Post = props => {
         />
       </div>
       <LikeSection 
-          data = {likes} />
+          likes = {likes} setLikes = {setLikes}/>
       <CommentSection
         postId={props.post.imageUrl}
         comments={props.post.comments}
