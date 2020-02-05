@@ -28,7 +28,7 @@ export const Post = props => {
         />
       </div>
       <LikeSection 
-      />
+          data = {likes} />
       <CommentSection
         postId={props.post.imageUrl}
         comments={props.post.comments}
