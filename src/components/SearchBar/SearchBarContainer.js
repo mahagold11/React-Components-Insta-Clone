@@ -2,7 +2,7 @@
 import React from "react";
 import "./SearchBar.css";
 
-const SearchBar = () => {
+export const SearchBar = () => {
   return (
     <div className="search-bar-wrapper">
       <div className="image-wrapper">
